@@ -26,5 +26,5 @@ tests/       vitest tests
 ```
 
 ## The bot
-Connect Four is a solved game, so the bot uses alpha-beta (negamax) search on a bitboard rather than Monte Carlo tree search. Expert tries an exact win/draw/loss solve first and plays perfectly once the position is solved. Easy, Medium and Hard limit search depth and add random mistakes.
+Connect Four is a solved game, so the bot uses alpha-beta (negamax) search on a bitboard. Expert tries an exact win/draw/loss solve first and plays perfectly once the position is solved. Easy, Medium and Hard limit search depth and add random mistakes.
 

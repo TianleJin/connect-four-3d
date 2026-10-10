@@ -17,7 +17,7 @@ Run `npm install`, `npm test` (16 tests), `npx tsc --noEmit`.
 - `tests/` – bitboard vs a 2D-grid reference over random games, threat masks, weak solver vs full search, and bot tactics.
 
 ## Measured
-- About 900 nodes/ms without move ordering and 400-500 with it (the original BigInt version did about 190).
+- About 900 nodes/ms without move ordering and 400-500 with it.
 - Complete win/draw/loss answer: ~4 ms at ply 26, ~40-100 ms at ply 22, ~1-2 s at ply 18, ~2.5 s at ply 14 (some positions hit a 10 s cap), mostly capped at ply 10. So Expert is provably perfect from roughly ply 18-22 on, and depth-limited (about 14-16 plies in 3 s) before that.
 - Level-vs-level tournament (10 games per pairing, 0.3 s limits): Medium beat Easy 8-2, Hard beat Medium 8-1, Expert beat Hard 5-2 with 3 draws. The ladder works. Never tested against a human.
 
